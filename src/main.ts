@@ -3,11 +3,11 @@ import * as webllm from '@mlc-ai/web-llm';
 
 document.querySelector('#app')!.innerHTML = `
   <div>
-    <h1>Hello AI Agent</h2>
+    <h1>Hello AI Agent</h1>
 
     <textarea
       id='input'
-      row='5'
+      rows='5'
       cols='50'
       placeholder='Tell me something...'
     ></textarea>
@@ -26,9 +26,9 @@ document.querySelector('#app')!.innerHTML = `
   </div>
 `;
 
-const status = document.getElementById('status');
+const status = document.getElementById('status')!;
 
-const output = document.getElementById('output');
+const output = document.getElementById('output')!;
 
 const askBtn = document.getElementById('ask');
 
